@@ -30,9 +30,9 @@ end
 
 local openNotion = function(_)
     if require "notion".opts.open == "notion" then
-        os.execute("open notion://www.notion.so")
+        os.execute("xdg-open https://www.notion.so")
     else
-        os.execute("open https://www.notion.so")
+        os.execute("xdg-open https://www.notion.so")
     end
 end
 
